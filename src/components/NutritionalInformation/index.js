@@ -1,0 +1,1 @@
+export { NutritionalInformation } from "./NutritionalInformation";

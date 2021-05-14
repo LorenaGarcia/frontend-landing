@@ -1,9 +1,14 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  position: relative;
-  background: rgb(255, 250, 250);
-  background: rgba(255, 250, 250, 0.7);
+  width: 100%;
+  position: absolute;
+  z-index: 9;
+`;
+
+const NavBar = styled.div`
+  position: sticky;
+  background: rgba(255, 250, 250, 0.6);
   height: 5rem;
   width: 100%;
   display: flex;
@@ -17,7 +22,8 @@ const Container = styled.div`
 const Logo = styled.img`
   width: 8rem;
   height: 3rem;
-  padding-left: 0.7rem;
+  padding-left: 1rem;
+  margin-bottom: ${(props) => props.open && "2rem"};
 `;
 
 const Burger = styled.button`
@@ -89,4 +95,4 @@ const StyledMenu = styled.nav`
   }
 `;
 
-export { Container, Logo, Burger, StyledMenu };
+export { Container, NavBar, Logo, Burger, StyledMenu };
