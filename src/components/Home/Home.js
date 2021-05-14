@@ -4,6 +4,7 @@ import { Container, Information } from "./Home.styles";
 import { ProductDescription } from "../ProductDescription";
 import { NutritionalInformation } from "../NutritionalInformation";
 import { EnergeticContent } from "../EnergeticContent";
+import { Gallery } from "../Gallery";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <NutritionalInformation />
         <EnergeticContent />
       </Information>
+      <Gallery />
     </Container>
   );
 };

@@ -14,8 +14,8 @@ const Main = styled.div`
   grid-area: main;
 `;
 
-const Footer = styled.div`
+const FooterInfo = styled.div`
   grid-area: footer;
 `;
 
-export { Container, Main, Footer };
+export { Container, Main, FooterInfo };

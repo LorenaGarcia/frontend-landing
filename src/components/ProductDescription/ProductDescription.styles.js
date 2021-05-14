@@ -26,7 +26,7 @@ const Flavors = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
-  font-family: OpenSans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -57,14 +57,14 @@ const TitleFlavor = styled.div`
 const Name = styled.p`
   text-align: left;
   color: #78246d;
-  font-family: OpenSans;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 300;
 `;
 
 const Description = styled.p`
   text-align: left;
-  font-family: OpenSans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 300;
   color: #000000;
@@ -76,9 +76,11 @@ const Button = styled.button`
   background: #78246d;
   border: none;
   color: #ffffff;
-  font-family: OpenSans;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
   font-size: 14px;
   text-align: center;
+  cursor: pointer;
 `;
 
 const StrawberryLM = styled.img`

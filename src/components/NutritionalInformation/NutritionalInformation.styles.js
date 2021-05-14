@@ -6,7 +6,7 @@ const Container = styled.div`
 
 const Title = styled.p`
   text-align: center;
-  font-family: OpenSans;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 2.41px;
@@ -14,7 +14,7 @@ const Title = styled.p`
 `;
 
 const Information = styled.p`
-  font-family: OpenSans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   color: #000000;
@@ -26,7 +26,7 @@ const Information = styled.p`
 
 const Ingredients = styled.div`
   margin-top: 2rem;
-  font-family: OpenSans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 300;
   color: #000000;
@@ -34,7 +34,7 @@ const Ingredients = styled.div`
 
 const TitleIngredients = styled.p`
   margin-top: 2rem;
-  font-family: OpenSans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   color: #000000;

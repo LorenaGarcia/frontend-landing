@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Main, Footer, Div } from "./Layout.styles";
+import { Container, Main, FooterInfo } from "./Layout.styles";
 import { Menu } from "../Menu";
+import { Footer } from "../Footer";
 
 const Layout = ({ children }) => {
   return (
@@ -9,7 +10,9 @@ const Layout = ({ children }) => {
         <Menu />
         {children}
       </Main>
-      <Footer>Footer</Footer>
+      <FooterInfo>
+        <Footer />
+      </FooterInfo>
     </Container>
   );
 };

@@ -13,7 +13,7 @@ const Description = styled.div`
   align-items: center;
   justify-content: flex-end;
   color: #78246d;
-  font-family: OpenSans;
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   font-weight: 300;
   line-height: 3;

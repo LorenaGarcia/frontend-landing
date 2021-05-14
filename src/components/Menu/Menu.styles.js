@@ -86,7 +86,7 @@ const StyledMenu = styled.nav`
 
   a {
     padding: 15px;
-    font-family: OpenSans;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
