@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   ContainerProduct,
   Product,
@@ -23,6 +25,7 @@ import {
   Circle,
   ImgArrow,
   ContainerCircle,
+  FlexDescription,
 } from "./ProductDescription.styles";
 import productImage from "../../images/bote-fresa.png";
 import fresaLM from "../../images/fresa-left-mobile.png";
@@ -36,6 +39,19 @@ import kcal from "../../images/kcal.png";
 import arrow from "../../images/arrow.png";
 
 const ProductDescription = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+    window.addEventListener(
+      "touchmove",
+      () => {
+        AOS.refresh();
+      },
+      false
+    );
+  }, []);
+
   return (
     <>
       <ContainerProduct>
@@ -47,7 +63,7 @@ const ProductDescription = () => {
           <ContainerDescriptionPicture>
             <DescriptionPicture src={productImage} alt="product" />
           </ContainerDescriptionPicture>
-          <div>
+          <FlexDescription>
             <Flavors>
               <TitleFlavor>Sabor:</TitleFlavor>
               <Flavor isFlavor={true}>Fresa</Flavor>
@@ -64,8 +80,8 @@ const ProductDescription = () => {
             <ContainerLogos>
               <ImageSello src={sello} /> <ImageKcal src={kcal} />
             </ContainerLogos>
-            <StrawberryBRD src={fresaBRD} alt="fresaBRD" />
-          </div>
+            <StrawberryBRD data-aos="zoom-in" src={fresaBRD} alt="fresaBRD" />
+          </FlexDescription>
         </Product>
       </ContainerProduct>
       <Diagonal>

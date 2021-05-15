@@ -19,7 +19,7 @@ const Information = styled.div`
     margin-top: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
   }
 `;

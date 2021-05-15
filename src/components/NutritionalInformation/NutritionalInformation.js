@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   Container,
   Title,
@@ -14,11 +16,28 @@ import strawberryITLD from "../../images/fresa-i-t-l-d.png";
 import strawberryITRD from "../../images/fresa-i-t-r-d.png";
 
 const NutritionalInformation = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+    window.addEventListener(
+      "touchmove",
+      () => {
+        AOS.refresh();
+      },
+      false
+    );
+  }, []);
+
   return (
     <Container>
       <ImgStrawberryITRD src={strawberryITRD} alt="strawberryITLD" />
       <Title>Información nutrimental</Title>
-      <ImgStrawberryITLD src={strawberryITLD} alt="strawberryITLD" />
+      <ImgStrawberryITLD
+        data-aos="zoom-in"
+        src={strawberryITLD}
+        alt="strawberryITLD"
+      />
 
       <Information>
         <ImgStrawberryRM src={strawberryRM} alt="strawberryRM" />

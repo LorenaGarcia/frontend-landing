@@ -9,7 +9,7 @@ const ContainerProduct = styled.div`
 const Product = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding: 7rem 1.5rem;
   padding-bottom: 1rem;
 
@@ -258,6 +258,10 @@ const ContainerCircle = styled.div`
   justify-content: center;
 `;
 
+const FlexDescription = styled.div`
+  max-width: 50rem;
+`;
+
 export {
   ContainerProduct,
   Product,
@@ -282,4 +286,5 @@ export {
   StrawberryTD,
   StrawberryTLD,
   StrawberryBRD,
+  FlexDescription,
 };
