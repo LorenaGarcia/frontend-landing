@@ -12,6 +12,12 @@ const Product = styled.div`
   justify-content: space-between;
   padding: 7rem 1.5rem;
   padding-bottom: 1rem;
+
+  @media (min-width: 700px) {
+    flex-direction: row;
+    padding: 7rem 10rem;
+    align-items: center;
+  }
 `;
 
 const ContainerDescriptionPicture = styled.div`
@@ -20,23 +26,46 @@ const ContainerDescriptionPicture = styled.div`
 
 const DescriptionPicture = styled.img`
   width: 7rem;
+
+  @media (min-width: 700px) {
+    height: 22rem;
+    width: auto;
+  }
+
+  @media (min-width: 900px) {
+    height: 26rem;
+    width: auto;
+    margin-right: 4rem;
+  }
+
+  @media (min-width: 1200px) {
+    height: 26rem;
+    width: auto;
+    margin-right: 6rem;
+  }
 `;
 
 const Flavors = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
   text-align: center;
   color: #000000;
+
+  @media (min-width: 900px) {
+    grid-template-columns: 4rem 6rem 6rem 6rem;
+    gap: 1rem;
+  }
 `;
 
 const Flavor = styled.div`
   max-width: 5rem;
-  border: 1px solid #00000052;
+  background-color: ${(props) =>
+    props.isFlavor ? "#ff00002b" : "transparent"};
+  border: ${(props) => (props.isFlavor ? "none" : "1px solid #00000052")};
   border-radius: 11px;
   margin-top: 1rem;
   margin-left: 0.5rem;
@@ -60,6 +89,11 @@ const Name = styled.p`
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 300;
+  margin-bottom: 1rem;
+
+  @media (min-width: 900px) {
+    font-size: 40px;
+  }
 `;
 
 const Description = styled.p`
@@ -68,6 +102,12 @@ const Description = styled.p`
   font-size: 14px;
   font-weight: 300;
   color: #000000;
+  margin-bottom: 3rem;
+  margin-top: 0;
+
+  @media (min-width: 900px) {
+    font-size: 17px;
+  }
 `;
 
 const Button = styled.button`
@@ -81,21 +121,85 @@ const Button = styled.button`
   font-size: 14px;
   text-align: center;
   cursor: pointer;
+
+  @media (min-width: 700px) {
+    width: 16rem;
+  }
 `;
 
 const StrawberryLM = styled.img`
+  display: block;
   position: absolute;
   z-index: 1;
   height: 10rem;
   top: 3rem;
+
+  @media (min-width: 700px) {
+    display: none;
+  }
 `;
 
 const StrawberryRM = styled.img`
+  display: block;
   position: absolute;
   z-index: 1;
   height: 10rem;
   top: 1rem;
   right: 0;
+
+  @media (min-width: 700px) {
+    display: none;
+  }
+`;
+
+const StrawberryLD = styled.img`
+  display: none;
+  position: absolute;
+  z-index: 1;
+  height: 15rem;
+  left: 0;
+
+  @media (min-width: 700px) {
+    display: block;
+  }
+`;
+
+const StrawberryTD = styled.img`
+  display: none;
+  position: absolute;
+  z-index: 1;
+  height: 8rem;
+  top: 0;
+  left: 50%;
+
+  @media (min-width: 700px) {
+    display: block;
+  }
+`;
+
+const StrawberryTLD = styled.img`
+  display: none;
+  position: absolute;
+  z-index: 1;
+  height: 15rem;
+  top: 0;
+  left: 5%;
+
+  @media (min-width: 700px) {
+    display: block;
+  }
+`;
+
+const StrawberryBRD = styled.img`
+  display: none;
+  position: absolute;
+  z-index: 1;
+  height: 15rem;
+  right: 0;
+
+  @media (min-width: 700px) {
+    display: block;
+  }
 `;
 
 const Diagonal = styled.div`
@@ -128,6 +232,10 @@ const ContainerLogos = styled.div`
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 1rem;
+
+  @media (min-width: 900px) {
+    justify-content: flex-start;
+  }
 `;
 
 const Circle = styled.div`
@@ -170,4 +278,8 @@ export {
   Circle,
   ImgArrow,
   ContainerCircle,
+  StrawberryLD,
+  StrawberryTD,
+  StrawberryTLD,
+  StrawberryBRD,
 };

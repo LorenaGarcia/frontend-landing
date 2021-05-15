@@ -30,6 +30,14 @@ const Image = styled.img`
 const Scroll = styled.div`
   max-width: 20rem;
   overflow: hidden;
+
+  @media (min-width: 700px) {
+    max-width: 50rem;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 100rem;
+  }
 `;
 
 const Product = styled.div`

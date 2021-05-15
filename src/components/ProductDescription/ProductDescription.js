@@ -12,6 +12,10 @@ import {
   Button,
   StrawberryLM,
   StrawberryRM,
+  StrawberryLD,
+  StrawberryTD,
+  StrawberryTLD,
+  StrawberryBRD,
   Diagonal,
   ImageSello,
   ImageKcal,
@@ -23,6 +27,10 @@ import {
 import productImage from "../../images/bote-fresa.png";
 import fresaLM from "../../images/fresa-left-mobile.png";
 import fresaRM from "../../images/fresa-r-m.png";
+import fresaLD from "../../images/fresa-l-d.png";
+import fresaTD from "../../images/fresa-t-d.png";
+import fresaTLD from "../../images/fresa-t-l-d.png";
+import fresaBRD from "../../images/fresa-b-r-d.png";
 import sello from "../../images/sello.png";
 import kcal from "../../images/kcal.png";
 import arrow from "../../images/arrow.png";
@@ -31,8 +39,10 @@ const ProductDescription = () => {
   return (
     <>
       <ContainerProduct>
+        <StrawberryTLD src={fresaTLD} alt="fresaTLD" />
+        <StrawberryTD src={fresaTD} alt="fresaTD" />
         <StrawberryLM src={fresaLM} alt="fresaLM" />
-        <StrawberryRM src={fresaRM} alt="fresaLM" />
+        <StrawberryRM src={fresaRM} alt="fresaRM" />
         <Product>
           <ContainerDescriptionPicture>
             <DescriptionPicture src={productImage} alt="product" />
@@ -40,7 +50,7 @@ const ProductDescription = () => {
           <div>
             <Flavors>
               <TitleFlavor>Sabor:</TitleFlavor>
-              <Flavor>Fresa</Flavor>
+              <Flavor isFlavor={true}>Fresa</Flavor>
               <Flavor>Guayaba</Flavor>
               <Flavor>Toronja</Flavor>
             </Flavors>
@@ -54,12 +64,14 @@ const ProductDescription = () => {
             <ContainerLogos>
               <ImageSello src={sello} /> <ImageKcal src={kcal} />
             </ContainerLogos>
+            <StrawberryBRD src={fresaBRD} alt="fresaBRD" />
           </div>
         </Product>
       </ContainerProduct>
       <Diagonal>
         <ContainerCircle>
           <Circle>
+            <StrawberryLD src={fresaLD} alt="fresaLD" />
             <ImgArrow src={arrow} alt="arrow" />
           </Circle>
         </ContainerCircle>

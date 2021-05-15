@@ -5,6 +5,13 @@ const Container = styled.div`
   background-color: #fafafa;
   margin-top: 3rem;
   padding-bottom: 0.5rem;
+
+  @media (min-width: 900px) {
+    padding: 0;
+    margin-top: 0;
+    margin-left: 1rem;
+    width: 60%;
+  }
 `;
 
 const Description = styled.div`
@@ -17,7 +24,6 @@ const Description = styled.div`
   font-size: 12px;
   font-weight: 300;
   line-height: 3;
-  margin-bottom: 2rem;
 
   p {
     min-width: 30%;
@@ -32,10 +38,15 @@ const DescriptionLeft = styled.div`
 `;
 
 const ImageSBLM = styled.img`
+  display: block;
   position: absolute;
   z-index: 1;
   height: 15rem;
   left: 0;
+
+  @media (min-width: 900px) {
+    display: none;
+  }
 `;
 
 export { Container, Description, DescriptionLeft, ImageSBLM };

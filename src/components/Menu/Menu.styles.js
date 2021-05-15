@@ -24,6 +24,10 @@ const Logo = styled.img`
   height: 3rem;
   padding-left: 1rem;
   margin-bottom: ${(props) => props.open && "2rem"};
+
+  @media (min-width: 940px) {
+    margin-left: 6rem;
+  }
 `;
 
 const Burger = styled.button`
@@ -69,6 +73,10 @@ const Burger = styled.button`
       transform: ${(props) => (props.open ? "rotate(-45deg)" : "rotate(0)")};
     }
   }
+
+  @media (min-width: 940px) {
+    display: none;
+  }
 `;
 
 const StyledMenu = styled.nav`
@@ -95,4 +103,49 @@ const StyledMenu = styled.nav`
   }
 `;
 
-export { Container, NavBar, Logo, Burger, StyledMenu };
+const MenuDescktop = styled.div`
+  display: none;
+  margin-right: 6rem;
+  width: 35rem;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+
+  a {
+    margin: 0;
+    margin-right: 0.5rem;
+    font-family: OpenSans;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  @media (min-width: 940px) {
+    display: flex;
+  }
+`;
+
+const ContainerSocial = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+
+  @media (min-width: 940px) {
+    margin-top: 0;
+  }
+`;
+
+const SocialNetwork = styled.img`
+  margin-left: 1rem;
+`;
+
+export {
+  Container,
+  NavBar,
+  Logo,
+  Burger,
+  StyledMenu,
+  MenuDescktop,
+  SocialNetwork,
+  ContainerSocial,
+};

@@ -24,22 +24,12 @@ const Gallery = () => {
 
           <Product>
             <Image src={sinazucar} alt="griego" />
-            <p>Vitalínea Griego</p>
-          </Product>
-
-          <Product>
-            <Image src={bebible} alt="griego" />
             <p>Vitalínea sin Azúcar</p>
           </Product>
 
           <Product>
             <Image src={bebible} alt="griego" />
             <p>Vitalínea Bebible</p>
-          </Product>
-
-          <Product>
-            <Image src={bebible} alt="griego" />
-            <p>Vitalínea Griego</p>
           </Product>
         </ContainerGallery>
       </Scroll>

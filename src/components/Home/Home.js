@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Information } from "./Home.styles";
+import { Container, Information, Title } from "./Home.styles";
 
 import { ProductDescription } from "../ProductDescription";
 import { NutritionalInformation } from "../NutritionalInformation";
@@ -10,6 +10,7 @@ const Home = () => {
   return (
     <Container>
       <ProductDescription />
+      <Title>Información nutrimental</Title>
       <Information>
         <NutritionalInformation />
         <EnergeticContent />
