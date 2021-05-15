@@ -49,4 +49,47 @@ const ImageSBLM = styled.img`
   }
 `;
 
-export { Container, Description, DescriptionLeft, ImageSBLM };
+const StrawberryLTD = styled.img`
+  display: none;
+  position: absolute;
+  z-index: 1;
+  height: 15rem;
+  left: 0;
+
+  @media (min-width: 700px) {
+    display: block;
+  }
+`;
+
+const StrawberryHCTD = styled.img`
+  display: none;
+  position: absolute;
+  z-index: 1;
+  height: 13rem;
+  left: 20rem;
+
+  @media (min-width: 700px) {
+    display: block;
+  }
+`;
+
+const StrawberryHRTD = styled.img`
+  display: none;
+  position: absolute;
+  z-index: 1;
+  height: 15rem;
+  right: 0;
+
+  @media (min-width: 700px) {
+    display: block;
+  }
+`;
+export {
+  Container,
+  Description,
+  DescriptionLeft,
+  ImageSBLM,
+  StrawberryLTD,
+  StrawberryHCTD,
+  StrawberryHRTD,
+};

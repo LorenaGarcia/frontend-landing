@@ -20,6 +20,10 @@ const Title = styled.p`
   font-size: 22px;
   font-weight: 300;
   margin-bottom: 5rem;
+
+  @media (min-width: 900px) {
+    font-size: 44px;
+  }
 `;
 
 const Image = styled.img`
@@ -36,7 +40,11 @@ const Scroll = styled.div`
   }
 
   @media (min-width: 1200px) {
-    max-width: 100rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60rem;
+    max-width: 60rem;
   }
 `;
 
@@ -46,6 +54,10 @@ const Product = styled.div`
   font-family: "Open Sans", sans-serif;
   font-size: 11px;
   font-weight: 300;
+
+  @media (min-width: 900px) {
+    font-size: 22px;
+  }
 `;
 
 const ContainerGallery = styled.div`

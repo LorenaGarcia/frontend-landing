@@ -4,8 +4,14 @@ import {
   Description,
   DescriptionLeft,
   ImageSBLM,
+  StrawberryLTD,
+  StrawberryHCTD,
+  StrawberryHRTD,
 } from "./EnergeticContent.styles";
 import strawberryLM from "../../images/fresa-energetic-l-m.png";
+import fresaLTD from "../../images/fresa-h-l-t-d.png";
+import fresaHCTD from "../../images/fresa-h-c-t-d.png";
+import fresaHRTD from "../../images/fresa-h-r-t-d.png";
 
 const EnergeticContent = () => {
   return (
@@ -68,6 +74,9 @@ const EnergeticContent = () => {
           <DescriptionLeft>%VNR*</DescriptionLeft>
           <p>22</p>
         </Description>
+        <StrawberryLTD src={fresaLTD} alt="fresaLLTD" />
+        <StrawberryHCTD src={fresaHCTD} alt="fresaHCTD" />
+        <StrawberryHRTD src={fresaHRTD} alt="fresaHRTD" />
       </Container>
     </>
   );
