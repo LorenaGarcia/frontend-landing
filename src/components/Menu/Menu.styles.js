@@ -114,7 +114,9 @@ const MenuDescktop = styled.div`
   a {
     margin: 0;
     margin-right: 0.5rem;
-    font-family: OpenSans;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
     font-size: 16px;
     color: #000000;
     text-decoration: none;
